@@ -1,0 +1,696 @@
+.infra{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 8rem; */
+  align-items: center;
+  min-height: 100%;
+  /* min-height: 100vh; */
+  position: relative;
+
+}
+.infra1{
+  display: flex;
+  gap: 3rem;
+  font-weight: bold;
+  font-size: 3vw;
+  justify-content: center;  /*vertically at the center*/
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.infra_struc{
+  /* height: 28.5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -4rem;
+  position: relative;
+}
+
+
+.image_updown{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: fit-content;
+  flex-direction: column;
+  margin-top: 6rem;
+  /* justify-content: space-between; */
+  justify-content: center;
+  /* align-items: center; */
+  gap: 3rem;
+  opacity: 0.85;
+}
+.image_updown img{
+  /* width: 20%; */
+  width: 100%;
+
+  /* height: 18rem; */
+  height: 20vw;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0rem 3rem rgba(100, 100, 100, 0.3);
+  filter: grayscale(20%);
+  transition: 1s ease;
+  position: relative;
+  /* max-width: 100%;  
+  height: auto;  */
+  
+
+}
+  
+.image_updown img:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+
+.flip-card-container_infra {
+  min-width: 100%;
+  position: relative;
+  
+  gap: 2rem;
+  justify-content: center;
+  
+
+}
+
+.flip-card_infra {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: 3rem;
+}
+
+
+/* Position the front and back side */
+.flip-card-back_infra {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; 
+  color: #fff;
+  /* opacity: 0.8; */
+  gap: 1vw;
+  border: 0.05rem solid rgb(284, 284, 284,284);
+  /* box-shadow: 0px 0px 2px rgb(284, 284, 284,284); */
+}
+.flip-card-back_infra:hover {
+  /* background-color: rgb(255, 255, 255);
+  color: #000000; */
+  box-shadow: 0px 0px 9px rgb(284, 284, 284,284);
+  transition: .4s ease-in-out;
+  filter: grayscale(90%);
+  transform: translateY(-6px);
+  
+}
+.flip-card-back_infra p {
+  text-align: center;
+  /* margin: 1rem; */
+  line-height: 1.5rem;
+  /* display: block; */
+  /* font-size: 1rem; */
+
+  font-size: 1.15vw;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+.flip-card-back_infra1 {
+  position: relative;
+  /* width: 100%;
+  height: 100%; */
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* gap: 1rem; */
+  box-shadow: 0px 0px 9px rgb(284, 284, 284,284);
+}
+
+.flip-card-back_infra1 p {
+  
+  text-align: center;
+  margin: 1rem;
+  /* line-height: 1.5rem; */
+  /* font-size: 1rem; */
+  font-size: 1.1vw;
+  font-style: italic;
+  font-weight: bold;
+  align-items: center;
+
+  
+}
+
+
+
+
+
+
+
+
+.btn_infra{
+  background-color: #fff;
+  width: 5rem;
+  height: 2.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 300ms all;
+  color: black;
+  border-radius: 1.2rem;
+}
+
+
+
+/*it is very important as when we hover on the button space and not on the text inside button and when we click on that space then we should reach at the bottom page but we don't thats why we have to give some padding in the text so that when we click on the space inside button then also it gets clicked and we reach at the end*/
+.btn_infra span{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.btn_infra:hover{
+  cursor: pointer;
+  color: #fff;
+  /* background-color: transparent; */
+  /* border: 4px solid #000; */
+  background-color: rgb(43, 41, 41);
+  
+}
+
+#less1000{
+  display: none;
+}
+
+
+#between1000{
+  display: none;
+}
+
+
+#infra300less{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1350px){
+  .flip-card-back_infra1 p {
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 1.1vw;
+    margin: 0.5rem;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.5rem;
+    height: 2.4rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .infra1{
+    font-size: 3.6vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 1.13vw;
+  }
+  .flip-card-back_infra p {
+    line-height: 1.4rem;
+    /* font-size: 1rem; */
+    font-size: 1.21vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.3rem;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width:1150px){
+  .flip-card-back_infra1 p {
+    line-height: 1.15rem;
+    /* font-size: 1rem; */
+    font-size: 1.12vw;
+    margin: 0.7rem;
+  }
+}
+@media only screen and (max-width:1100px){
+  .flip-card-back_infra1 p {
+    line-height: 1.07rem;
+    /* font-size: 1rem; */
+    font-size: 1.11vw;
+  }
+  .flip-card_infra {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .flip-card-back_infra p {
+    line-height: 1.4rem;
+    /* font-size: 1rem; */
+    font-size: 1.26vw;
+  }
+  .infra1{
+    gap: 2.5rem;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.3rem;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width:1000px){
+  .infra1{
+    font-size: 3.7vw;
+    gap: 2rem;
+  }
+  .flip-card-back_infra{
+    height: 23vw;
+    padding: 1rem;
+  }
+  .flip-card-back_infra p {
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 1.6vw;
+  }
+  .flip-card-back_infra1 {
+    height: 23vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 1.4vw;
+    /* margin: 0.1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card_infra {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .image_updown img{
+    height: 29vw;
+  }
+  
+  #above1000{
+    display: none;
+  }
+  #less1000{
+    display: none;
+  }
+  #between1000{
+    display: flex;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.3rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width:900px){
+  .infra1{
+    font-size: 3.9vw;
+    gap: 2rem;
+  }
+  .flip-card-back_infra{
+    height: 25vw;
+    padding: 1rem;
+    gap: 1vw;
+  }
+  .flip-card-back_infra p {
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 1.6vw;
+  }
+  .flip-card-back_infra1 {
+    height: 25vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 1.45vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.3rem;
+    height: 2.2rem;
+    font-size: 0.72rem;
+  }
+}
+@media only screen and (max-width:800px){
+  .infra1{
+    font-size: 4.2vw;
+    gap: 1.8rem;
+  }
+  .flip-card_infra {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .flip-card-back_infra{
+    height: 29vw;
+  }
+  .flip-card-back_infra1 {
+    height: 29vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.1rem;
+    /* font-size: 1rem; */
+    font-size: 1.59vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.2rem;
+    height: 2.2rem;
+    font-size: 0.71rem;
+  }
+}
+@media only screen and (max-width:700px){
+  .infra1{
+    font-size: 4.5vw;
+  }
+  .flip-card_infra {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+  }
+  .flip-card-back_infra{
+    height: 33vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 1.8vw;
+  }
+  .flip-card-back_infra1 {
+    height: 33vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.1rem;
+    /* font-size: 1rem; */
+    font-size: 1.79vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.2rem;
+    height: 2.2rem;
+    font-size: 0.71rem;
+  }
+}
+@media only screen and (max-width:600px){
+  .infra_struc{
+    top: -5rem;
+  }
+  .infra1{
+    font-size: 5vw;
+    gap: 1.4rem;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 3.5rem;
+  }
+  .flip-card-back_infra{
+    height: 37vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.3rem;
+    /* font-size: 1rem; */
+    font-size: 2.5vw;
+  }
+  .flip-card-back_infra1 {
+    height: 37vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.25rem;
+    /* font-size: 1rem; */
+    font-size: 2.5vw;
+  }
+  .image_updown img{
+    height: 46vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.2rem;
+    font-size: 0.76rem;
+  }
+  #above1000{
+    display: none;
+  }
+  #less1000{
+    display: flex;
+  }
+  #between1000{
+    display: none;
+  }
+
+}
+@media only screen and (max-width:500px){
+  .infra1{
+    font-size: 5.7vw;
+    gap: 1.2rem;
+  }
+  .image_updown img{
+    height: 53vw;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 3rem;
+  }
+  .flip-card-back_infra{
+    height: 44vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 3.2vw;
+  }
+  .flip-card-back_infra1 {
+    height: 47vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 2.7vw;
+    margin: 1rem;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.2rem;
+    font-size: 0.76rem;
+  }
+}
+@media only screen and (max-width:400px){
+  .infra_struc{
+    top: -6rem;
+  }
+  .infra1{
+    font-size: 6.3vw;
+    gap: 1.1rem;
+  }
+  .image_updown img{
+    height: 58vw;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2.5rem;
+  }
+  .flip-card-back_infra{
+    height: 60vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 3.5vw;
+  }
+  .flip-card-back_infra1 {
+    height: 56vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1.1rem;
+    /* font-size: 1rem; */
+    font-size: 3.2vw;
+  }
+  .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 2.3rem;
+    font-size: 0.76rem;
+  }
+}
+@media only screen and (max-width:350px){
+  .infra1{
+    font-size: 6.9vw;
+    gap: 1.1rem;
+  }
+  .image_updown img{
+    height: 59vw;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 2.5rem;
+  }
+  .flip-card-back_infra{
+    height: 60vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.2rem;
+    /* font-size: 1rem; */
+    font-size: 3.5vw;
+  }
+  .flip-card-back_infra1 {
+    height: 56vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1rem;
+    /* font-size: 1rem; */
+    font-size: 3vw;
+  }
+  .btn_infra{
+    width: 4.1rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.69rem;
+    border-radius: 1.2rem;
+  }
+}
+@media only screen and (max-width:300px){
+  .infra1{
+    font-size: 7.4vw;
+    gap: 1rem;
+  }
+  .image_updown img{
+    height: 59vw;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 2.5rem;
+  }
+  .flip-card-back_infra{
+    height: 75vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 1.1rem;
+    /* font-size: 1rem; */
+    font-size: 3.9vw;
+  }
+  .flip-card-back_infra1 {
+    height: 70vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 1rem;
+    /* font-size: 1rem; */
+    font-size: 3.3vw;
+  }
+  /* .btn_infra{
+    background-color: #fff;
+    width: 4.4rem;
+    height: 1.9rem;
+  } */
+  .btn_infra{
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.66rem;
+    border-radius: 1.2rem;
+  }
+  /* .btn_infra span{
+    font-size: 0.7rem;
+  } */
+
+  #infra300above{
+    display: none;
+  }
+  #infra300less{
+    display: flex;
+  }
+}
+@media only screen and (max-width:250px){
+  .infra1{
+    font-size: 9vw;
+    gap: 1rem;
+  }
+  .image_updown img{
+    height: 59vw;
+  }
+  .flip-card_infra {
+    grid-template-columns: 1fr;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    gap: 2.5rem;
+  }
+  .flip-card-back_infra{
+    height: 80vw;
+  }
+  .flip-card-back_infra p{
+    line-height: 0.8rem;
+    /* font-size: 1rem; */
+    font-size: 3.9vw;
+  }
+  .flip-card-back_infra1 {
+    height: 71vw;
+  }
+  .flip-card-back_infra1 p {
+    line-height: 0.8rem;
+    /* font-size: 1rem; */
+    font-size: 3.3vw;
+  }
+  /* .btn_infra{
+    background-color: #fff;
+    width: 3.8rem;
+    height: 1.6rem;
+    
+  }
+  .btn_infra span{
+    font-size: 0.6rem;
+  } */
+  .btn_infra{
+    width: 3.8rem;
+    height: 1.9rem;
+    font-weight: bold;
+    font-size: 0.61rem;
+    border-radius: 1.2rem;
+  }
+}
+
+
+
+
