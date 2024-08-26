@@ -1,808 +1,551 @@
-.join{
-    top: -4.2rem;
-    position: relative;
+.join {
+  top: -4.2rem;
+  position: relative;
 }
 
-.join12{
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: bold;
-    /* font-size: 3rem; */
-    font-size: 3vw;
-    justify-content: center;  /*vertically at the center*/
-    color: #fff;
-    text-transform: uppercase;
-    font-style: italic;
-    position: relative;
+.join12 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  /* font-size: 3rem; */
+  font-size: 3vw;
+  justify-content: center; /*vertically at the center*/
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+  position: relative;
 }
-.leftrightjoin{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 6rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    gap: 0rem;
-    opacity: 0.95;
+.leftrightjoin {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  gap: 0rem;
+  opacity: 0.95;
 }
 
-.right_join{
-    width: 40vw;
+.right_join {
+  width: 40vw;
 }
 
 .flip-card-container_join {
-    height: 44vw;
-    width: 40vw;
-    border-radius: 1rem;
-    perspective: 1000px;
-    position: relative;
-    overflow: hidden; 
+  height: 44vw;
+  width: 40vw;
+  border-radius: 1rem;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
 }
 
 .flip-card_join {
-    position: relative;
-    height: 44vw;
-    width: 40vw;
-    border-radius: 1rem;
+  position: relative;
+  height: 44vw;
+  width: 40vw;
+  border-radius: 1rem;
 }
 
-  
-  
 /* Position the front and back side */
 .flip-card-back_join {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000; 
-    color: #fff;
-    opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  opacity: 0.9;
 }
 
-.numlink{
-    display: flex;
+.numlink {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  font-style: italic;
+  font-size: 1.4rem;
+  width: 110%;
+}
+
+.social_links {
+  display: flex;
+  margin-top: 1rem;
+}
+.social_links img {
+  width: 3rem;
+  margin-top: 0.5rem;
+}
+.social_links img:hover {
+  transform: translateY(-0.5rem);
+  transition: all 350ms ease;
+}
+
+.socialtext {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.facebook_icon {
+  width: 4rem;
+}
+.email_contact_join {
+  color: #fff;
+  /* width: 5rem; */
+  font-size: 1.5vw;
+  font-style: italic;
+  /* margin-top: -1.5rem; */
+  position: relative;
+}
+
+.email_contact_join input,
+select {
+  /* width: 15vw; */
+  width: 15rem;
+  height: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  background-color: black;
+  border: 2px solid rgb(255, 255, 255);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.fitness_goal {
+  position: relative;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: black;
+  color: #fff;
+  left: 15vw;
+  border: 1px solid rgb(66, 62, 62);
+}
+
+.text_goal {
+  position: absolute;
+}
+
+.numberaddtext {
+  top: 0.4rem;
+  position: relative;
+}
+.less300 {
+  display: none;
+}
+
+.less1000 {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .flip-card_join {
     position: relative;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    height: 48vw;
+    width: 45vw;
+  }
+  .flip-card-container_join {
+    height: 48vw;
+    width: 45vw;
+  }
+  .right_join {
+    margin-right: 6vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .flip-card_join {
+    position: relative;
+    height: 50vw;
+    width: 45vw;
+  }
+  .flip-card-container_join {
+    height: 50vw;
+    width: 45vw;
+  }
+  .right_join {
+    margin-right: 6vw;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .flip-card_join {
+    position: relative;
+    height: 54vw;
+    width: 48vw;
+  }
+  .flip-card-container_join {
+    height: 54vw;
+    width: 48vw;
+  }
+  .leftrightjoin {
+    gap: 4rem;
+  }
+  /* .email_contact_join{
+        left: -1.3vw;
+    } */
+  .numberaddtext {
+    top: 0.5rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .join12 {
+    font-size: 3.5vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 58vw;
+    width: 47vw;
+  }
+  .flip-card-container_join {
+    height: 58vw;
+    width: 47vw;
+  }
+  .leftrightjoin {
+    gap: 4rem;
+  }
+  /* .email_contact_join{
+        left: -2vw;
+    } */
+  .numberaddtext {
+    top: 0.6rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .join12 {
+    font-size: 3.9vw;
+  }
+  .more1000 {
+    display: none !important;
+  }
+  .less1000 {
+    display: flex !important;
     flex-direction: column;
-    font-style: italic;
-    font-size: 1.4rem;
-    width: 110%;
-}
-
-.social_links{
-    display: flex;
-    margin-top: 1rem;
-}
-.social_links img{
-    width: 3rem;
-    margin-top: 0.5rem;
-}
-.social_links img:hover{
-    transform: translateY(-0.5rem);
-    transition: all 350ms ease;
-}
-
-.socialtext{
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-.facebook_icon{
-    width: 4rem; 
-}
-.email_contact_join{
-    color: #fff;
-    /* width: 5rem; */
-    font-size: 1.5vw;
-    font-style: italic;
-    /* margin-top: -1.5rem; */ 
+    align-items: center;
+    gap: 8rem;
+  }
+  .flip-card_join {
     position: relative;
+    height: 64vw;
+    width: 60vw;
+  }
+  .flip-card-container_join {
+    height: 64vw;
+    width: 60vw;
+  }
+  .right_join {
+    height: 64vw;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .email_contact_join {
+    font-size: 2vw;
+  }
+  .fitness_goal {
+    left: 20vw;
+  }
+  .numberaddtext {
+    top: 0.4rem;
+    position: relative;
+  }
 }
-
-.email_contact_join input,select{
-    /* width: 15vw; */
-    width: 15rem;
-    height: 2rem;
+@media only screen and (max-width: 900px) {
+  .join12 {
+    font-size: 4.2vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 70vw;
+    width: 62vw;
+  }
+  .flip-card-container_join {
+    height: 70vw;
+    width: 62vw;
+  }
+  .right_join {
+    height: 70vw;
+    width: 62vw;
+    margin: 0 auto;
+  }
+  .numberaddtext {
+    top: 0.4rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .join12 {
+    font-size: 4.2vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 72vw;
+    width: 62vw;
+  }
+  .flip-card-container_join {
+    height: 72vw;
+    width: 62vw;
+  }
+  .right_join {
+    height: 72vw;
+    width: 62vw;
+    margin: 0 auto;
+  }
+  .numberaddtext {
+    top: 0.4rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .join12 {
+    font-size: 4.5vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 79vw;
+    width: 71vw;
+  }
+  .flip-card-container_join {
+    height: 79vw;
+    width: 71vw;
+  }
+  .right_join {
+    height: 79vw;
+    width: 71vw;
+    margin: 0 auto;
+  }
+  .email_contact_join {
+    font-size: 2.4vw;
+  }
+  .fitness_goal {
+    left: 24vw;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .join12 {
+    font-size: 4.5vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 83vw;
+    width: 71vw;
+  }
+  .flip-card-container_join {
+    height: 83vw;
+    width: 71vw;
+  }
+  .right_join {
+    height: 83vw;
+    width: 71vw;
+    margin: 0 auto;
+  }
+  .email_contact_join {
+    font-size: 2.4vw;
+  }
+  .fitness_goal {
+    left: 24vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .join12 {
+    font-size: 4.8vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 90vw;
+    width: 82vw;
+  }
+  .flip-card-container_join {
+    height: 90vw;
+    width: 82vw;
+  }
+  .right_join {
+    height: 90vw;
+    width: 82vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 2.8vw;
+  }
+  .fitness_goal {
+    left: 28vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .join12 {
+    font-size: 4.8vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 97vw;
+    width: 82vw;
+  }
+  .flip-card-container_join {
+    height: 97vw;
+    width: 82vw;
+  }
+  .right_join {
+    height: 97vw;
+    width: 82vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 2.8vw;
+  }
+  .fitness_goal {
+    left: 28vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .join {
+    top: -5rem;
+  }
+  .less1000 {
+    display: flex !important;
+  }
+  .join12 {
+    font-size: 5.5vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 106vw;
+    width: 84vw;
+  }
+  .flip-card-container_join {
+    height: 106vw;
+    width: 84vw;
+  }
+  .right_join {
+    height: 106vw;
+    width: 84vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 3vw;
+  }
+  .fitness_goal {
+    left: 30vw;
+  }
+  .email_contact_join input,
+  select {
+    width: 13rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .join {
+    top: -5rem;
+  }
+  .less1000 {
+    display: flex !important;
+  }
+  .join12 {
+    font-size: 5.5vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 115vw;
+    width: 84vw;
+  }
+  .flip-card-container_join {
+    height: 115vw;
+    width: 84vw;
+  }
+  .right_join {
+    height: 115vw;
+    width: 84vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 3vw;
+  }
+  .fitness_goal {
+    left: 30vw;
+  }
+  .email_contact_join input,
+  select {
+    width: 13rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .join12 {
+    font-size: 6vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 123vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 123vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 123vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 3.5vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .fitness_goal {
+    left: 35vw;
+    width: 40vw;
+    height: 40vw;
+  }
+  .email_contact_join input,
+  select {
+    /* width: 9.6rem; */
+    width: 12rem;
+    height: 1.8rem;
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 2rem;
     background-color: black;
     border: 2px solid rgb(255, 255, 255);
     color: #fff;
-}
-
-
-input::placeholder {
-    color: #ffffff;
-    opacity: 0.6;
-}
-
-.fitness_goal{
-    position: relative;
-    border-radius: 10px;
-    padding: 0.5rem;
-    background-color: black;
-    color: #fff;
-    left: 15vw;
-    border: 1px solid rgb(66, 62, 62);
-}
-
-.text_goal{
-    position: absolute;
-}
-
-.numberaddtext{
-    top: 0.4rem;
-    position: relative;
-}
-.less300{
-    display: none;
-}
-
-.less1000{
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* for multiple countries phone numbers */
-/* .numbercountries{
-    display: flex;
-}
-.phoneNumberContainer{
-    font-family: 'Work Sans', sans-serif;
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-}
-.phoneInputBox{
-    width: 19rem;
-    height: 2.2rem;
-    border-radius: 13px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    background-color: rgb(15, 15, 15);;
-    padding: 4px;
-}
-.flagImg{
-    width: 1.5rem;
-}
-.flagContainer{
-    width: 2.5rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.2rem;
-    cursor: pointer;
-    border-right: 1px solid rgb(229, 229, 229);
-}
-.countrySearch{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(228, 228, 228);
-    margin: 0 1.2rem;
-    grid-gap: 15px;
-}
-.countrySearch > input{
-    width: 100%;
-    font: inherit; 
-    font-size: 1rem;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    top: 0.5rem;
-    text-align: left;
-    padding-left: 8px;
-}
-.countrySearch > input:focus{
-    outline: none;
-}
-.inputBoxContainer{
-    display: flex;
-    flex-direction: column;
-    grid-gap: 4px;
-    color: rgb(16, 14, 14);
-}
-.inputNumber{
+    font-size: 0.8rem;
+    margin-right: 0 auto;
+  }
+  .btn_join {
+    width: 4.5rem;
+    height: 2.3rem;
+    font-weight: bold;
+    /*to align text in center*/
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.inputNumber > input{
-    font-size: 1rem;
-    border: none;
-    margin-left: 5px;
-    padding-left: 4px;
-    top: 0.5rem;
-    width: 11rem;
-    position: relative;
-    text-align: left;
-}
-.inputNumber .countrycode{
-    border: none;
-    background-color: rgb(15, 15, 15);
-    color: #F3F5F9;
-    margin-left: 5px;
-    padding-left: 5px;
-    top: 0.5rem;
-    width: 6rem;
-    position: relative;
-    text-align: left;
-    font-size: 0.9rem;
-}
-.inputNumber .countrycode::placeholder{
-    color: rgb(255, 255, 255);
-}
-.inputNumber .numberphone{
-    border: none;
-    background-color: rgb(15, 15, 15);
-    color: #F3F5F9;
-    margin-left: 5px;
-    padding-left: 5px;
-    top: 0.5rem;
-    width: 9rem;
-    position: relative;
-    text-align: left;
-    font-size: 0.9rem;
-}
-.inputNumber .numberphone::placeholder{
-    color: rgb(255, 255, 255);
-}
-
-
-.inputnumber > input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        display: none;
-      }
-.inputNumber > input:focus{
-    outline: none;
-}
-.flagDropDownBox{
-    height: 10rem;
-    background-color: rgb(16, 14, 14);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 13px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.flagDropDownBox::-webkit-scrollbar {
-    display: none;
-}
-.flagList{
-    grid-gap: 3px;
-    padding: 0.5rem;
-}
-.flag{
-    list-style: none;
+    border-radius: 1.2rem;
+    font-size: 0.8rem;
+  }
+  .left_join {
+    width: 68vw;
+    margin-left: 2rem;
+    margin-right: 4rem;
+  }
+  .numlink {
     display: flex;
+    position: relative;
+    justify-content: center;
     align-items: center;
-    grid-gap: 8px;
-    padding: 0rem;
-    margin: 0.4rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.flag>img{
-    width: 2rem;
-}
-.flagNames{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-.flagNames>span{
-    color: grey;
-    font-size: 0.9rem;
-}
-.flagName{
-    width: 10rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: medium;
-}
-.flag:hover, .flagActive{
-    background-color: #F3F5F9;
-    color: rgb(16, 14, 14);
-}
-.flagActive .flagName{
-    font-weight: 500;
-}
-.flag:hover .flagName{
-    font-weight: 500;
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:1400px){
-    .flip-card_join {
-        position: relative;
-        height: 48vw;
-        width: 45vw;
-    }
-    .flip-card-container_join {
-        height: 48vw;
-        width: 45vw;
-    }
-    .right_join{
-        margin-right: 6vw;
-    
-    }
-    /* .email_contact_join{
-        left: -0.7vw;
-    } */
-}
-/* @media only screen and (max-width:1350px){
-    .flip-card_join {
-        position: relative;
-        height: 57vw;
-        width: 45vw;
-    }
-    .flip-card-container_join {
-        height: 57vw;
-        width: 45vw;
-    }
-    .right_join{
-        margin-right: 6vw;
-    
-    }
-} */
-@media only screen and (max-width:1300px){
-    .flip-card_join {
-        position: relative;
-        height: 50vw;
-        width: 45vw;
-    }
-    .flip-card-container_join {
-        height: 50vw;
-        width: 45vw;
-    }
-    .right_join{
-        margin-right: 6vw;
-    
-    }
-}
-@media only screen and (max-width:1200px){
-    .flip-card_join {
-        position: relative;
-        height: 54vw;
-        width: 48vw;
-    }
-    .flip-card-container_join {
-        height: 54vw;
-        width: 48vw;
-    }
-    .leftrightjoin{
-        gap: 4rem;
-    }
-    /* .email_contact_join{
-        left: -1.3vw;
-    } */
-    .numberaddtext{
-        top: 0.5rem;
-        position: relative;
-    }
-}
-@media only screen and (max-width:1100px){
-    .join12{
-        font-size: 3.5vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 58vw;
-        width: 47vw;
-    }
-    .flip-card-container_join {
-        height: 58vw;
-        width: 47vw;
-    }
-    .leftrightjoin{
-        gap: 4rem;
-    }
-    /* .email_contact_join{
-        left: -2vw;
-    } */
-    .numberaddtext{
-        top: 0.6rem;
-        position: relative;
-    }
-}
-@media only screen and (max-width:1000px){
-    .join12{
-        font-size: 3.9vw;
-    }
-    .more1000{
-        display: none !important;
-    }
-    .less1000{
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        gap: 8rem;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 64vw;
-        width: 60vw;
-    }
-    .flip-card-container_join {
-        height: 64vw;
-        width: 60vw;
-    }
-    .right_join{
-        height: 64vw;
-        width: 60vw;
-        margin: 0 auto;
-    }
-    .email_contact_join{
-        font-size: 2vw;
-    }
-    .fitness_goal{
-        left: 20vw;
-    }
-    .numberaddtext{
-        top: 0.4rem;
-        position: relative;
-    }
-
-}
-@media only screen and (max-width:900px){
-    .join12{
-        font-size: 4.2vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 70vw;
-        width: 62vw;
-    }
-    .flip-card-container_join {
-        height: 70vw;
-        width: 62vw;
-    }
-    .right_join{
-        height: 70vw;
-        width: 62vw;
-        margin: 0 auto;
-    }
-    .numberaddtext{
-        top: 0.4rem;
-        position: relative;
-    }
-}
-@media only screen and (max-width:850px){
-    .join12{
-        font-size: 4.2vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 72vw;
-        width: 62vw;
-    }
-    .flip-card-container_join {
-        height: 72vw;
-        width: 62vw;
-    }
-    .right_join{
-        height: 72vw;
-        width: 62vw;
-        margin: 0 auto;
-    }
-    .numberaddtext{
-        top: 0.4rem;
-        position: relative;
-    }
-}
-@media only screen and (max-width:800px){
-    .join12{
-        font-size: 4.5vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 79vw;
-        width: 71vw;
-    }
-    .flip-card-container_join {
-        height: 79vw;
-        width: 71vw;
-    }
-    .right_join{
-        height:79vw;
-        width: 71vw;
-        margin: 0 auto;
-    }
-    .email_contact_join{
-        font-size: 2.4vw;
-    }
-    .fitness_goal{
-        left: 24vw;
-    }
-}
-@media only screen and (max-width:750px){
-    .join12{
-        font-size: 4.5vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 83vw;
-        width: 71vw;
-    }
-    .flip-card-container_join {
-        height: 83vw;
-        width: 71vw;
-    }
-    .right_join{
-        height: 83vw;
-        width: 71vw;
-        margin: 0 auto;
-    }
-    .email_contact_join{
-        font-size: 2.4vw;
-    }
-    .fitness_goal{
-        left: 24vw;
-    }
-}
-@media only screen and (max-width:700px){
-    .join12{
-        font-size: 4.8vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 90vw;
-        width: 82vw;
-    }
-    .flip-card-container_join {
-        height: 90vw;
-        width: 82vw;
-    }
-    .right_join{
-        height: 90vw;
-        width: 82vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 2.8vw;
-    }
-    .fitness_goal{
-        left: 28vw;
-    }
-}
-@media only screen and (max-width:650px){
-    .join12{
-        font-size: 4.8vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 97vw;
-        width: 82vw;
-    }
-    .flip-card-container_join {
-        height: 97vw;
-        width: 82vw;
-    }
-    .right_join{
-        height: 97vw;
-        width: 82vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 2.8vw;
-    }
-    .fitness_goal{
-        left: 28vw;
-    }
-}
-@media only screen and (max-width:600px){
-    .join{
-        top: -5rem;
-    }
-    .less1000{
-        display: flex !important;
-    }
-    .join12{
-        font-size: 5.5vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 106vw;
-        width: 84vw;
-    }
-    .flip-card-container_join {
-        height: 106vw;
-        width: 84vw;
-    }
-    .right_join{
-        height: 106vw;
-        width: 84vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 3vw;
-    }
-    .fitness_goal{
-        left: 30vw;
-    }
-    .email_contact_join input,select{
-        width: 13rem;
-    }
-}
-@media only screen and (max-width:550px){
-    .join{
-        top: -5rem;
-    }
-    .less1000{
-        display: flex !important;
-    }
-    .join12{
-        font-size: 5.5vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 115vw;
-        width: 84vw;
-    }
-    .flip-card-container_join {
-        height: 115vw;
-        width: 84vw;
-    }
-    .right_join{
-        height: 115vw;
-        width: 84vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 3vw;
-    }
-    .fitness_goal{
-        left: 30vw;
-    }
-    .email_contact_join input,select{
-        width: 13rem;
-    }
-}
-@media only screen and (max-width:500px){
-    .join12{
-        font-size: 6vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 123vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 123vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 123vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 3.5vw;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .fitness_goal{
-        left: 35vw;
-        width: 40vw;
-        height: 40vw;
-    }
-    .email_contact_join input,select{
-        /* width: 9.6rem; */
-        width: 12rem;
-        height: 1.8rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        border-radius: 2rem;
-        background-color: black;
-        border: 2px solid rgb(255, 255, 255);
-        color: #fff;
-        font-size:0.8rem;
-        margin-right: 0 auto;
-    }
-    .btn_join{
-        width: 4.5rem;
-        height: 2.3rem;
-        font-weight: bold;
-        /*to align text in center*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.2rem;
-        font-size: 0.8rem;
-    }
-    .left_join{
-        width: 68vw;
-        margin-left: 2rem;
-        margin-right: 4rem;
-    }
-    .numlink{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        flex-direction: column;
-        font-style: italic;
-        font-size: 1.3rem;
-    }
-    /* .numbercountries{
+    color: #fff;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+  /* .numbercountries{
         display: flex;
         flex-direction: column;
         margin-top: -0.5rem;
@@ -837,619 +580,422 @@ input::placeholder {
         font-size: 0.75rem;
     } */
 }
-@media only screen and (max-width:450px){
-    .flip-card_join {
-        position: relative;
-        height: 134vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 134vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 134vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 3.5vw;
-        margin-left: 1.5rem;
-        margin-right: 2rem;
-    }
-    /* .flagDropDownBox{
+@media only screen and (max-width: 450px) {
+  .flip-card_join {
+    position: relative;
+    height: 134vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 134vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 134vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 3.5vw;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+  }
+  /* .flagDropDownBox{
         height: 9rem;
     } */
 }
-@media only screen and (max-width:400px){
-    .join{
-        top: -6rem;
-    }
-    .join12{
-        font-size: 6.6vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 138vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 138vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 138vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 3.7vw;
-        margin-left: 1.5rem;
-        margin-right: 2rem;
-    }
-    .fitness_goal{
-        left: 37vw;
-        width: 37vw;
-        height: 37vw;
-        font-size: 0.7rem;
-    }
-    .email_contact_join input,select{
-        width: 11rem;
-        height: 1.7rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        border-radius: 2rem;
-        background-color: black;
-        border: 2px solid rgb(255, 255, 255);
-        color: #fff;
-        font-size:0.8rem;
-        margin-right: 0 auto;
-    }
-    .btn_join{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.2rem;
-        width: 4rem;
-        height: 2rem;
-        font-weight: bold;
-        font-size: 0.75rem;
-    }
-    .left_join{
-        width: 78vw;
-        margin-left: 2rem;
-        margin-right: 3.5rem;
-    }
-    .numlink{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        flex-direction: column;
-        font-style: italic;
-        font-size: 1.1rem;
-    }
-    .social_links img{
-        width: 2.5rem;
-    }
-    /* .countrySearch > input{
-        width: 100%;
-        font: inherit; 
-        font-size: 1rem;
-        border: none;
-        background-color: transparent;
-        position: relative;
-        top: 0.5rem;
-        text-align: left;
-        padding-left: 8px;
-    } */
+@media only screen and (max-width: 400px) {
+  .join {
+    top: -6rem;
+  }
+  .join12 {
+    font-size: 6.6vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 138vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 138vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 138vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 3.7vw;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+  }
+  .fitness_goal {
+    left: 37vw;
+    width: 37vw;
+    height: 37vw;
+    font-size: 0.7rem;
+  }
+  .email_contact_join input,
+  select {
+    width: 11rem;
+    height: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    font-size: 0.8rem;
+    margin-right: 0 auto;
+  }
+  .btn_join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .left_join {
+    width: 78vw;
+    margin-left: 2rem;
+    margin-right: 3.5rem;
+  }
+  .numlink {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+  .social_links img {
+    width: 2.5rem;
+  }
 }
-@media only screen and (max-width:390px){
-    .flip-card_join {
-        position: relative;
-        height: 142vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 142vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 142vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+@media only screen and (max-width: 390px) {
+  .flip-card_join {
+    position: relative;
+    height: 142vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 142vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 142vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
-@media only screen and (max-width:380px){
-    .flip-card_join {
-        position: relative;
-        height: 147vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 147vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 147vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+@media only screen and (max-width: 380px) {
+  .flip-card_join {
+    position: relative;
+    height: 147vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 147vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 147vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
-@media only screen and (max-width:350px){
-    .join12{
-        font-size: 6.6vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 200vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 200vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 200vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 4vw;
-        width: 50vw;
-        margin-left: -2rem;
-        margin-right: 2rem;
-        bottom: 1rem;
-    }
-    .fitness_goal{
-        left: 0vw;
-        width: 51vw;
-        height: 41vw;
-        font-size: 0.7rem;
-    }
-    .email_contact_join input,select{
-        width: 12rem;
-        height: 1.8rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        border-radius: 2rem;
-        background-color: black;
-        border: 2px solid rgb(255, 255, 255);
-        color: #fff;
-        font-size:0.7rem;
-        margin-right: 0 auto;
-    }
-    .btn_join{
-        /* width: 4.1rem;
+@media only screen and (max-width: 350px) {
+  .join12 {
+    font-size: 6.6vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 200vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 200vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 200vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 4vw;
+    width: 50vw;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    bottom: 1rem;
+  }
+  .fitness_goal {
+    left: 0vw;
+    width: 51vw;
+    height: 41vw;
+    font-size: 0.7rem;
+  }
+  .email_contact_join input,
+  select {
+    width: 12rem;
+    height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    font-size: 0.7rem;
+    margin-right: 0 auto;
+  }
+  .btn_join {
+    /* width: 4.1rem;
         height: 2rem; */
-        top: 1rem;
-        position: relative;
-        /*to align text in center*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.2rem;
-        width: 4rem;
-        height: 2rem;
-        font-weight: bold;
-        font-size: 0.75rem;
-    }
-    .makeplan{
-        position: relative;
-        top: 0rem;
-        left: 0rem;
-    }
-    .writeabout{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        top: 0rem;
-    }
-
-    /* .flagDropDownBox{
-        width: 15rem;
-    }
-    .countrySearch > input{
-        width: 100%;
-        font: inherit; 
-        font-size: 1rem;
-        border: none;
-        background-color: transparent;
-        position: relative;
-        top: 0.5rem;
-        text-align: left;
-        padding-left: 8px;
-    }
-    .countrySearch input::placeholder{
-        font-size: 0.85rem;
-    }
-    .phoneInputBox{
-        width: 15rem;
-        position: relative;
-    }
-    .inputNumber .countrycode{
-        width: 4.5rem;
-    }
-    .inputNumber .numberphone{
-        width: 7.7rem;
-    }
-    .inputNumber > input::placeholder{
-        font-size: 0.7rem;
-    } */
+    top: 1rem;
+    position: relative;
+    /*to align text in center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .makeplan {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+  .writeabout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    top: 0rem;
+  }
 }
-@media only screen and (max-width:320px){
-    .flip-card_join {
-        position: relative;
-        height: 209vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 209vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 209vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+@media only screen and (max-width: 320px) {
+  .flip-card_join {
+    position: relative;
+    height: 209vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 209vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 209vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
-@media only screen and (max-width:300px){
-    .join12{
-        font-size: 6.6vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 226vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 226vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 226vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 4.7vw;
-        width: 50vw;
-        margin-left: -2rem;
-        margin-right: 2rem;
-        bottom: 1rem;
-    }
-    .fitness_goal{
-        left: 0vw;
-        width: 51vw;
-        height: 41vw;
-        font-size: 0.7rem;
-    }
-    .email_contact_join input,select{
-        width: 12rem;
-        height: 1.8rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        border-radius: 2rem;
-        background-color: black;
-        border: 2px solid rgb(255, 255, 255);
-        color: #fff;
-        font-size:0.7rem;
-        margin-right: 0 auto;
-    }
-    .btn_join{
-        /* width: 4.1rem;
+@media only screen and (max-width: 300px) {
+  .join12 {
+    font-size: 6.6vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 226vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 226vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 226vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 4.7vw;
+    width: 50vw;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    bottom: 1rem;
+  }
+  .fitness_goal {
+    left: 0vw;
+    width: 51vw;
+    height: 41vw;
+    font-size: 0.7rem;
+  }
+  .email_contact_join input,
+  select {
+    width: 12rem;
+    height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    font-size: 0.7rem;
+    margin-right: 0 auto;
+  }
+  .btn_join {
+    /* width: 4.1rem;
         height: 2rem; */
-        top: 1rem;
-        position: relative;
-        /*to align text in center*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.2rem;
-        width: 4rem;
-        height: 2rem;
-        font-weight: bold;
-        font-size: 0.75rem;
-    }
-    .makeplan{
-        position: relative;
-        top: 0rem;
-        left: 0rem;
-    }
-    .writeabout{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        top: 0rem;
-    }
-
-    /* .flagDropDownBox{
-        width: 77vw;
-        height: 7rem;
-        left: -0.4rem;
-        position: relative;
-    }
-    .countrySearch > input{
-        width: 100%;
-        font: inherit; 
-        font-size: 1rem;
-        border: none;
-        background-color: transparent;
-        position: relative;
-        top: 0.5rem;
-        text-align: left;
-        padding-left: 1px;
-    }
-    .countrySearch input::placeholder{
-        font-size: 0.75rem;
-    }
-    .phoneInputBox{
-        width: 77vw;
-        left: -0.4rem;
-        position: relative;
-    }
-    .inputNumber .countrycode{
-        width: 24vw;
-    }
-    .inputNumber .numberphone{
-        width: 35vw;
-    }
-    .inputNumber > input::placeholder{
-        font-size: 3.7vw;
-    } */
-
+    top: 1rem;
+    position: relative;
+    /*to align text in center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .makeplan {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+  .writeabout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    top: 0rem;
+  }
 }
-@media only screen and (max-width:280px){
-    .flip-card_join {
-        position: relative;
-        height: 238vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 238vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 238vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+@media only screen and (max-width: 280px) {
+  .flip-card_join {
+    position: relative;
+    height: 238vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 238vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 238vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
-@media only screen and (max-width:250px){
-    .join12{
-        font-size: 6.6vw;
-    }
-    .flip-card_join {
-        position: relative;
-        height: 265vw;
-        width: 88vw;
-    }
-    .flip-card-container_join {
-        height: 265vw;
-        width: 88vw;
-    }
-    .right_join{
-        height: 265vw;
-        width: 88vw;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    .email_contact_join{
-        font-size: 4.7vw;
-        width: 50vw;
-        margin-left: -2rem;
-        margin-right: 2rem;
-        bottom: 1rem;
-    }
-    .fitness_goal{
-        left: 0vw;
-        width: 51vw;
-        height: 41vw;
-        font-size: 0.7rem;
-    }
-    .email_contact_join input,select{
-        width: 10rem;
-        height: 1.8rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        border-radius: 2rem;
-        background-color: black;
-        border: 2px solid rgb(255, 255, 255);
-        color: #fff;
-        font-size:0.7rem;
-        margin-right: 0 auto;
-    }
-    .btn_join{
-        /* width: 4.1rem;
+@media only screen and (max-width: 250px) {
+  .join12 {
+    font-size: 6.6vw;
+  }
+  .flip-card_join {
+    position: relative;
+    height: 265vw;
+    width: 88vw;
+  }
+  .flip-card-container_join {
+    height: 265vw;
+    width: 88vw;
+  }
+  .right_join {
+    height: 265vw;
+    width: 88vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .email_contact_join {
+    font-size: 4.7vw;
+    width: 50vw;
+    margin-left: -2rem;
+    margin-right: 2rem;
+    bottom: 1rem;
+  }
+  .fitness_goal {
+    left: 0vw;
+    width: 51vw;
+    height: 41vw;
+    font-size: 0.7rem;
+  }
+  .email_contact_join input,
+  select {
+    width: 10rem;
+    height: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    font-size: 0.7rem;
+    margin-right: 0 auto;
+  }
+  .btn_join {
+    /* width: 4.1rem;
         height: 2rem; */
-        top: 1rem;
-        position: relative;
-        /*to align text in center*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 1.2rem;
-        width: 4rem;
-        height: 2rem;
-        font-weight: bold;
-        font-size: 0.75rem;
-    }
-    .makeplan{
-        position: relative;
-        top: 0rem;
-        left: 0rem;
-    }
-    .writeabout{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        top: 0rem;
-    }
+    top: 1rem;
+    position: relative;
+    /*to align text in center*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+  }
+  .makeplan {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+  .writeabout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    top: 0rem;
+  }
 
-    .flagDropDownBox{
-        /* width: 14rem; */
-        width: 82vw;
-        height: 7rem;
-        left: -0.4rem;
-        position: relative;
-    }
-    .countrySearch > input{
-        width: 100%;
-        font: inherit; 
-        font-size: 1rem;
-        border: none;
-        background-color: transparent;
-        position: relative;
-        top: 0.5rem;
-        text-align: left;
-        /* padding-left: -7px; */
-    }
-    .countrySearch input::placeholder{
-        font-size: 0.75rem;
-    }
-    .phoneInputBox{
-        /* width: 14rem; */
-        width: 82vw;
-        left: -0.4rem;
-        position: relative;
-    }
-    .inputNumber .countrycode{
-        /* width: 4.2rem; */
-        width: 24vw;
-        /* left: -1rem; */
-    }
-    .inputNumber .numberphone{
-        /* width: 7rem; */
-        width: 35vw;
-    }
-    .inputNumber > input::placeholder{
-        /* font-size: 0.65rem; */
-        font-size: 3.7vw;
-    }
+  .flagDropDownBox {
+    /* width: 14rem; */
+    width: 82vw;
+    height: 7rem;
+    left: -0.4rem;
+    position: relative;
+  }
+  .countrySearch > input {
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 0.5rem;
+    text-align: left;
+  }
+  .countrySearch input::placeholder {
+    font-size: 0.75rem;
+  }
+  .phoneInputBox {
+    width: 82vw;
+    left: -0.4rem;
+    position: relative;
+  }
+  .inputNumber .countrycode {
+    width: 24vw;
+  }
+  .inputNumber .numberphone {
+    width: 35vw;
+  }
+  .inputNumber > input::placeholder {
+    font-size: 3.7vw;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media only screen and (min-width:900px) and (max-width:1000px) and (min-height:1300px) and (max-height: 1400px){
-    .join{
-        margin-bottom: 50rem;
-    }
-}
-@media only screen and (min-width:800px) and (max-width:900px) and (min-height:1100px) and (max-height: 1200px){
-    .join{
-        margin-bottom: 40rem;
-
-    }
-}
-@media only screen and (min-width:700px) and (max-width:800px) and (min-height:1000px) and (max-height: 1100px){
-    .join{
-        margin-bottom: 30rem;
-    }
-}
-@media only screen and (min-width:500px) and (max-width:600px) and (min-height:700px) and (max-height: 800px){
-    .join{
-        margin-bottom: 10rem;
-    }
-}
-@media only screen and (min-width:200px) and (max-width:300px) and (min-height:600px) and (max-height: 700px){
-    .join{
-        margin-bottom: 5rem;
-    }
-}
-@media only screen and (min-width:400px) and (max-width:500px) and (min-height:900px) and (max-height: 1000px){
-    .join{
-        margin-bottom: 22rem;
-    }
-}
-@media only screen and (min-width:1000px) and (max-width:1100px) and (min-height:500px) and (max-height: 700px){
-    .join{
-        margin-bottom: 4rem;
-    }
-}
-@media only screen and (min-width:1200px) and (max-width:1300px) and (min-height:700px) and (max-height: 900px){
-    .footer{
-        margin-bottom: 17rem;
-    }
-}
-@media only screen and (min-width:300px) and (max-width:400px) and (min-height:700px) and (max-height: 900px){
-    .join{
-        margin-bottom: 12rem;
-    }
-}
-@media only screen and (min-width:300px) and (max-width:500px) and (min-height:800px) and (max-height: 900px){
-    .join{
-        margin-bottom: 19rem;
-    }
-}
-@media only screen and (min-width:400px) and (max-width:500px) and (min-height:800px) and (max-height: 1000px){
-    .join{
-        margin-bottom: 22rem;
-    }
-}
-@media only screen and (min-width:300px) and (max-width:400px) and (min-height:600px) and (max-height: 700px){
-    .join{
-        margin-bottom: 7rem;
-    }
-}
- */
